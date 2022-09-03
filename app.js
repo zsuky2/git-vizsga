@@ -49,7 +49,7 @@ function addBook() {
 
    
 
-    if (title.value=="" || author.value =="" || number.value=="" || category.value=="" || price.value=="" || price.value<0){
+    if (title.value=="" || author.value =="" || number.value=="" || category.value=="" || price.value=="" number.value<0 || || price.value<0){
        
         alert("Hiányosan töltötte ki vagy helytelen adatot adott meg.")
         return
