@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Könyvek rögzítése</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="" method="post" class="w-50 text-center p-1">
+
+            <h2 class="mb-5">JavaScript Könyvek rögzítése</h2>
+
+            <label>Könyv címe</label>
+            <input type="text" id="title" class="form-control mb-3 rounded-pill">
+
+            <label>Könyv szerzője</label>
+            <input type="text" id="author" class="form-control mb-3 rounded-pill">
+
+            <label>Könyv ISBN-száma</label>
+            <input type="number" id="number" class="form-control mb-3 rounded-pill">
+
+            <label>Kategória</label>
+            <input type="text" id="category" class="form-control mb-3 rounded-pill">
+
+            <label>Ára</label>
+            <input type="number" id="price" class="form-control mb-3 rounded-pill">
+
+            <label>ÁFA tartalom</label>
+            <div class="mb-3">
+                <input type="radio"  name="vat" id="vatNullPercent" checked>
+                <label for="notDiscounted">0%</label>
+
+                <input type="radio" name="vat" id="vatTenPercent">
+                <label for="discounted">10%</label>
+
+                <input type="radio"  name="vat" id="vatTwentySevenPercent">
+                <label for="discounted">27%</label>
+            </div>
+            <label>Akciós?</label>
+            <div class="mb-3">
+                <input type="radio" name="discounted" id="notDiscounted">
+                <label for="notDiscounted">Igen</label>
+
+
+                <input type="radio" name="discounted" id="discounted" checked>
+                <label for="discounted">Nem</label>
+            </div>
+
+
+            <button id="add" class="btn">Mentés</button>
+
+        </form>
+
+    </div>
+    <div class="container mt-3">
+
+        <table class="table table-striped text-center w-75 mx-auto">
+
+            <tr>
+                <th>Cím</th>
+                <th>Szerző</th>
+                <th>ISBN-száma</th>
+                <th>Kategória</th>
+                <th>Ár</th>
+                <th>ÁFA tartalom</th>
+                <th>Akciós?</th>
+                <th>Bruttó ár</th>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
